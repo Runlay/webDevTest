@@ -1,51 +1,83 @@
-*{
-   font-family: 'Romanesco', cursive;
-   font-size: 46px;
-   margin: 0;
-   padding: 0;
+* {
+    font-family: 'Romanesco', cursive;
+    font-size: 46px;
+    margin: 0;
+    padding: 0;
 }
-#burger:hover{
+
+#sideNav {
+    background-color: #202020;
+    color: white;
+    width: 0;
+    height: 0;
+}
+
+a {
+    display: block;
+    text-align: center;
+    padding-top: 0.5em;
+    text-decoration: none;
+    color: white;
+    /* left: 50%; */
+    /* transform: translate(-50%, -50%); */
+}
+
+.active {
+    color: #3D8BD3;
+}
+
+#sideNav a:last-child {
+    padding-top: 5em;
+}
+
+#burger:hover {
     cursor: pointer;
 }
-.nav{
-  display: flex;
-  float: left;
-  height: auto;
-  /* border: solid 1px; */
-  width: 100%;
-  position: sticky;
+
+.nav {
+    display: flex;
+    position: absolute;
+    float: left;
+    height: auto;
+    /* border: solid 1px; */
+    width: 100%;
+    position: sticky;
 }
-#caption{
+
+#caption {
     padding-left: 1.5em;
     /* vertical-align: middle; */
 }
-.welcome{
+
+.welcome {
     display: block;
     padding-top: 1.5em;
     height: 50vh;
 }
-.welcome-img{
+
+.welcome-img {
     background-image: url("img/hallway.jpg");
     background-size: cover;
     height: 100%;
     filter: blur(1px);
     /* -webkit-filter: blur(3px); */
 }
-.slogan{
-  /* background-color: rgb(0,0,0); Fallback color */
-  /* background-color: rgba(0,0,0, 0.4); Black w/opacity/see-through */
-  color: white;
-  font-size: 1.5em;
-  /* border: 3px solid #f1f1f1; */
-  position: absolute;
-  top: 30%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  width: 80%;
-  padding: 20px;
+
+#slogan {
+    color: white;
+    font-size: 1.5em;
+    /* border: 3px solid #f1f1f1; */
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    /* z-index: 2; */
+    width: 80%;
+    padding: 20px;
 }
-a{
+
+.btn {
     font-family: 'Prata', serif;
     font-size: 25px;
     position: absolute;
@@ -59,31 +91,39 @@ a{
     left: 50%;
     transform: translate(-50%, -50%);
 }
-a +a{
+
+.btn+.btn {
     top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
-.catering{
+
+.catering {
     display: block;
-    padding-top: 1.5em;
-    height: 50vh;
+    padding-top: 1em;
 }
-.kitchen-img{
+
+.kitchen-img {
     background-image: url("img/lobby.jpg");
     background-size: contain;
     background-repeat: no-repeat;
-    height: 100%;
+    height: 40vh;
+    width: 100vw;
     filter: blur(1px);
 }
-.slogan-2{
-color: white;
-  font-size: 1em;
-  /* border: 3px solid #f1f1f1; */
-  position: absolute;
-  top: 80%;
-  left: 50%;
-  transform: translate(-50%, -50%)
+
+#slogan-2 {
+    position: absolute;
+    color: white;
+    font-size: 1em;
+    /* border: 3px solid #f1f1f1; */
+    /* text-align: center; */
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%)
 }
-.btn-speisen{
+
+.btn-speisen {
     font-family: 'Prata', serif;
     font-size: 25px;
     position: absolute;
@@ -96,4 +136,18 @@ color: white;
     top: 90%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.service {
+    display: block;
+    padding-top: 1em;
+    height: 50vh;
+}
+
+.service-img {
+    background-image: url("img/reception.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100%;
+    filter: blur(1px);
 }
