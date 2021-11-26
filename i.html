@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Hotel Princeton</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Romanesco&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
+    <!-- <script src="app.js"></script> -->
+</head>
+<style>
+    * {
+        font-size: 40px;
+        font-family: Romanesco;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        vertical-align: middle;
+    }
+    
+    #caption {
+        padding-left: 20px;
+        font-size: 120%;
+    }
+    
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .item {
+        position: relative;
+        width: 100%;
+        height: 40vh;
+        margin-top: 20px;
+    }
+    
+    .item:hover {
+        filter: blur(4px);
+    }
+    
+    #zimmer-1 {
+        background-image: url("img/bed2.jpg");
+        background-size: cover;
+    }
+    
+    #zimmer-1 p {
+        position: absolute;
+        top: 40%;
+        height: fit-content;
+        background-color: #3D8BD3;
+        width: fit-content;
+        padding: 10px;
+        padding-right: 60px;
+        border-radius: 10px;
+        color: white;
+    }
+    
+    #zimmer-2 {
+        background-image: url("img/business.jpg");
+        background-size: cover;
+    }
+    
+    #zimmer-2 p {
+        position: absolute;
+        top: 40%;
+        height: fit-content;
+        background-color: #3D8BD3;
+        width: fit-content;
+        padding: 10px;
+        padding-right: 60px;
+        border-radius: 10px;
+        color: white;
+    }
+    
+    #zimmer-3 {
+        background-image: url("img/bed1.jpg");
+        background-size: cover;
+    }
+    
+    #zimmer-3 p {
+        position: absolute;
+        top: 40%;
+        height: fit-content;
+        background-color: #3D8BD3;
+        width: fit-content;
+        padding: 10px;
+        padding-right: 60px;
+        border-radius: 10px;
+        color: white;
+    }
+    
+    #zimmer-4 {
+        background-image: url("img/suite.jpg");
+        background-size: cover;
+    }
+    
+    #zimmer-4 p {
+        position: absolute;
+        top: 40%;
+        height: fit-content;
+        background-color: #3D8BD3;
+        width: fit-content;
+        padding: 10px;
+        padding-right: 60px;
+        border-radius: 10px;
+        color: white;
+    }
+    
+    @media screen and (min-width: 40em) {
+        .container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        .item {
+            width: 50vw;
+            height: 100%;
+            border: solid 1px;
+        }
+    }
+</style>
+
+<body>
+    <!-- <section id="sideNav">
+        <span id="close">&#10006;</span>
+        <a class="active2">Home</a>
+        <a href="rooms.html">Zimmer</a>
+        <a href="booking.html">Buchungsanfrage</a>
+        <a href="about-us.html">Über uns</a>
+        <a href="impressum.html">Impressum</a>
+    </section> -->
+    <header>
+        <nav class="nav">
+            <div id="burger">&#9776; </div>
+            <div id="caption">Hotel Princeton</div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="item" id="zimmer-1">
+                <p>Basic ab 35€</p>
+                <button>Buchen</button>
+            </div>
+            <div class="item" id="zimmer-2">
+                <p>Business ab 60€</p>
+            </div>
+            <div class="item" id="zimmer-3">
+                <p>Premium ab 120€</p>
+            </div>
+            <div class="item" id="zimmer-4">
+                <p>Suite ab 200€</p>
+            </div>
+        </div>
+
+    </main>
+    <!-- <footer>
+        <p>Hotel Princeton <br> Musterstraße 1 <br>Karlsruhe 76131 <br>Inhaber: Max van Princeton</p>
+    </footer> -->
+</body>
+
+</html>
